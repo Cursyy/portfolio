@@ -1,0 +1,120 @@
+html {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 57, 68);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(41, 184, 177);
+    padding: 1rem;
+    border-radius: 25px;
+    border: 5px solid rgb(32, 145, 139);
+}
+
+h1 {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0px 0px 3px lightblue;
+}
+
+.input_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.js_input {
+    width: 60%;
+    margin-right: 2rem;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.add_btn {
+    border: 3px solid white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: lime;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+#listbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 320px;
+    overflow-y: auto;
+}
+
+.todoitem {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    vertical-align: center;
+    overflow-wrap: break-word;
+}
+
+.done_btn {
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-right: 1rem;
+    transition: all .5s;
+}
+
+.done_btn:hover {
+    background-color: lime;
+    cursor: pointer;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 255, 0, 0.758);
+    border-radius: 10px;
+    opacity: 0.5;
+}
