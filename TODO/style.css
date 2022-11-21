@@ -1,6 +1,6 @@
 html {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -69,6 +69,38 @@ h1 {
     font-size: 1.5rem;
 }
 
+.done_btn_list {
+    border: 3px solid white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: lime;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.todo_btn_list {
+    border: 3px solid white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+.done_btn_list:hover {
+    box-shadow: 0px 0px 10px lime;
+}
+
+.todo_btn_list:hover {
+    box-shadow: 0px 0px 10px red;
+}
+
 #listbox {
     display: flex;
     flex-direction: column;
@@ -83,6 +115,15 @@ h1 {
     font-size: 1.5rem;
     vertical-align: center;
     overflow-wrap: break-word;
+}
+
+.doneitem {
+    color: white;
+    margin: 10px 0;
+    font-size: 1.5rem;
+    vertical-align: center;
+    overflow-wrap: break-word;
+    text-decoration: line-through;
 }
 
 .done_btn {
